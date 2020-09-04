@@ -10,12 +10,12 @@ calc.ml :
 function.ml :
     this file contains all the functions for the backend.
      
-               array   range        destination
- => add_const (a, x1,y1, x2,y2 ,c , dx,dy) -> this function is used to add a constant value to the range specified.
+               array   range             destination
+ => add_const (a,      x1,y1, x2,y2 , c , dx,dy) -> this function is used to add a constant value to the range specified.
                                                  uses a basic nested for loop to add values and store finally at the destination cell.
    
-                array   range       range          destination
- => add_range (a,   x1,y1,x2,y2  ,x3,y3,x4,y4  ,dx,dy) -> this function is used to add two ranges specified.
+                array   range          range          destination
+ => add_range (a,       x1,y1,x2,y2  ,x3,y3,x4,y4  ,  dx,dy) -> this function is used to add two ranges specified.
                                                  uses a basic nested for loop to add values and store finally at the destination cell.
 
  => add_range_cell (a,   x1,y1,x2,y2  ,tx,ty  ,dx,dy) -> this function is used to add range specified and value at a cell.
